@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!-- my CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>EnricoFeraldo</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <a href="#!" class="brand-logo black-text">C1C50R1C0</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="" class="black-text">About</a></li>
+                        <li><a href="" class="black-text">Contact</a></li>
+                        <li><a href="" class="black-text">More</a></li>
+                    </ul>
+                    <ul class="sidenav red lighten-2" id="mobile-nav">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">More</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Slider -->
+    <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="img/neonbrand-426918-unsplash.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h2>Education</h3>
+                        <h5 class="light grey-text text-lighten-3">An investment in knowledge pays the best interest.
+                        </h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/arian-darvishi-1210156-unsplash.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h2>Talk is cheap</h2>
+                    <h5 class="light grey-text text-lighten-3">Show me the code! </h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/emile-perron-190221-unsplash.jpg"> <!-- random image -->
+                <div class="caption left-align">
+                    <h2>Truth</h2>
+                    <h5 class="light grey-text text-lighten-3">Can only be found <br> in the one place : <br> the code
+                    </h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- About Us -->
+    <section class="id" id="id">
+        <div class="container white-text">
+            <div class="row">
+                <h2 class="center">About Us</h2>
+                <div class="col s6">
+                    <h5>We Are Profesional</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, ut eos. Voluptatem modi
+                        beatae ullam corrupti, corporis nostrum delectus inventore excepturi ab similique temporibus
+                        ipsum harum praesentium tenetur, esse eaque?</p>
+                </div>
+                <div class="col s6">
+                    <p>Web Development</p>
+                    <div class="progress white">
+                        <div class="determinate" style="width: 95%"></div>
+                    </div>
+                    <p>Mobile Apps Development</p>
+                    <div class="progress white">
+                        <div class="determinate" style="width: 80%"></div>
+                    </div>
+                    <p>Game Development</p>
+                    <div class="progress white">
+                        <div class="determinate" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Javascript -->
+    <script src="js/materialize.js"></script>
+    <!-- myscript -->
+    <script>
+        const sideNav = document.querySelectorAll('.sidenav');
+        const slider = document.querySelectorAll('.slider')
+        M.Sidenav.init(sideNav);
+        M.Slider.init(slider, {
+            indicators: false,
+            height: 550,
+            transition: 600,
+            interval: 5000
+        });
+    </script>
+</body>
+
+</html>
